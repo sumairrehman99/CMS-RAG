@@ -17,6 +17,8 @@ jobs:
 
       - name: Run container health check
         run: |
-          docker run -d -p 8000:8000 --name cms-rag cms-rag
+          docker run -d -p 8000:8000 \ 
+          -e OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
+          --name cms-rag cms-rag
           sleep 10
           curl -f http://localhost:8000/health
