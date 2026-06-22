@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t cms-rag .
+
+      - name: Run container health check
+        run: |
+          docker run -d -p 8000:8000 --name cms-rag cms-rag
+          sleep 10
+          curl -f http://localhost:8000/health
