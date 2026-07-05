@@ -66,24 +66,6 @@ CMS Policy Copilot is a Retrieval-Augmented Generation (RAG) application that en
 
 ---
 
-## Project Structure
-
-```
-cms-policy-copilot/
-│
-├── app/
-├── ingest.py
-├── answer.py
-├── frontend.py
-├── implementation/
-├── chroma_db/
-├── Dockerfile
-├── requirements.txt
-└── README.md
-```
-
----
-
 ## How It Works
 
 1. CMS policy documents are parsed and cleaned.
