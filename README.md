@@ -84,7 +84,7 @@ CMS Policy Copilot is a Retrieval-Augmented Generation (RAG) application that en
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/cms-policy-copilot.git
+git clone https://github.com/sumairrehman99/cms-policy-copilot.git
 
 cd cms-policy-copilot
 ```
