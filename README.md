@@ -10,7 +10,7 @@ CMS Policy Copilot is a Retrieval-Augmented Generation (RAG) application that en
 - Retrieval-Augmented Generation (RAG)
 - Semantic document search
 - ChromaDB vector database
-- Hugging Face embeddings
+- OpenAI embeddings
 - FastAPI REST API
 - Dockerized deployment
 - AWS ECS deployment
@@ -28,7 +28,7 @@ CMS Policy Copilot is a Retrieval-Augmented Generation (RAG) application that en
       Chunking & Text Cleaning
                  │
                  ▼
-      Hugging Face Embeddings
+          OpenAI Embeddings
                  │
                  ▼
             ChromaDB
